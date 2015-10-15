@@ -1,0 +1,57 @@
+*{margin:0; padding:0;}
+body {color:#555; font-family:Arial, serif; font-size:62.5%;}
+
+.styleguide-center {
+	margin: 0 auto;
+	max-width: 940px;
+	position: relative;
+}
+
+/* HEADER */
+.styleguide-header {padding: 1em 0;}
+
+.styleguide-title {
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* BODY */
+.styleguide-body {position:relative;}
+
+.styleguide-sidebar {
+	position:absolute;
+	left: 0;
+	top: 0;	
+	width: 300px;
+}
+
+/* MAIN MENU */
+.styleguide-mainmenu {
+
+}
+
+.styleguide-mainmenu-list {
+
+}
+
+.styleguide-mainmenu-item {
+
+}
+
+.styleguide-mainmenu-link {
+
+}
+
+/* CONTENT */
+.styleguide-content {
+	padding-left: 310px;
+}
+
+
+/* FOOTER */
+.styleguide-footer {padding: 1em 0;}
+
+.styleguide-copyright {
+	text-align: center;
+}
