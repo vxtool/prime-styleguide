@@ -1,0 +1,17 @@
+{
+  "name": "Project name",
+  "description": "Description of project",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "name": "Colors",
+      "link": "#colors",
+      "sub" : false
+    },
+    {
+      "name": "Typography",
+      "link": "#typography",
+      "sub" : false
+    }
+  ]
+}
