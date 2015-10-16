@@ -1,3 +1,45 @@
+var MainMenu = React.createClass({
+  render: function() {
+    var mainMenuNodes = this.props.data.map(function (section, i) {
+      return (
+        <li className="styleguide-mainmenu-item" key={i}>
+          <a className="styleguide-mainmenu-link" href={section.link}>{section.name}</a>
+        </li>
+      );
+    });
+    return (
+      <nav className="styleguide-mainmenu">
+        <ul className="styleguide-mainmenu-list">
+          {mainMenuNodes}
+        </ul>
+      </nav>
+    );
+  }
+});
+
+var SectionsContent = React.createClass({
+  render: function() {
+    var num = 0;
+    var sectionsContentNodes = this.props.data.map(function (section, i) {
+      num = num + 1;
+      return (
+        <section className="styleguide-panel" key={i}>
+          <header className="styleguide-panel-header">
+            <h2 className="styleguide-panel-title"><span className="styleguide-panel-title-number">{num}</span> {section.name}</h2>
+          </header>
+          <div className="styleguide-panel-content">
+          </div>
+        </section>
+      );
+    });
+    return (
+      <div>
+        {sectionsContentNodes}
+      </div>
+    );
+  }
+});
+
 var Sections = React.createClass({
   getInitialState: function() {
     return {data: []};
@@ -6,51 +48,30 @@ var Sections = React.createClass({
     $.ajax({
       url: this.props.url,
       dataType: 'json',
-      cache: false,
-      success: function(data) {
-        this.setState({data: data});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
+      cache: false
+    })
+    .done(function(data) {
+      this.setState({data: data.sections});
+    }.bind(this))
+    .fail(function(xhr, status, err) {
+      console.error(this.props.url, status, err.toString());
+    }.bind(this));
   },
   render: function() {
-    var sections = this.state.data.sections || [];
     return (
       <div>
-        <aside class="styleguide-sidebar">
-          <nav class="styleguide-mainmenu">
-            <ul class="styleguide-mainmenu-list">
-              {sections.map(function(section){
-                return (
-                  <li class="styleguide-mainmenu-item">
-                    <a class="styleguide-mainmenu-link" href={section.link}>{section.name}</a>
-                  </li>
-                );
-              })}       
-            </ul>
-          </nav>
+        <aside className="styleguide-sidebar">
+          <MainMenu data={this.state.data} />
         </aside>
-        <div class="styleguide-content">
-          {sections.map(function(section){
-            return (
-              <section class="styleguide-panel">
-                <header class="styleguide-panel-header">
-                  <h2 class="styleguide-panel-title"><span class="styleguide-panel-title-number">01</span> {section.name}</h2>
-                </header>
-                <div class="styleguide-panel-content">
-                </div>
-              </section>
-            );
-          })}
+        <div className="styleguide-content">
+          <SectionsContent data={this.state.data} />
         </div>
-      <div>
+      </div>
     );
   }
 });
 
 ReactDOM.render(
-  <Sections url="config.json" pollInterval={2000} />,
+  <Sections url="config.json" />,
   document.getElementById('styleguide-body')
 );
