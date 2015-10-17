@@ -20,12 +20,15 @@ var MainMenu = React.createClass({
 var SectionsContent = React.createClass({
   render: function() {
     var num = 0;
+    var result;
     var sectionsContentNodes = this.props.data.map(function (section, i) {
       num = num + 1;
+      if(num < 10){result = '0' + num;}
+      else {result = num;}
       return (
         <section className="styleguide-panel" key={i}>
           <header className="styleguide-panel-header">
-            <h2 className="styleguide-panel-title"><span className="styleguide-panel-title-number">{num}</span> {section.name}</h2>
+            <h2 className="styleguide-panel-title"><span className="styleguide-panel-title-number">{result}</span> {section.name}</h2>
           </header>
           <div className="styleguide-panel-content">
           </div>

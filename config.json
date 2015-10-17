@@ -12,6 +12,31 @@
       "name": "Typography",
       "link": "#typography",
       "sub" : false
+    },
+    {
+      "name": "Buttons",
+      "link": "#buttons",
+      "sub" : false
+    },
+    {
+      "name": "Iconography",
+      "link": "#iconography",
+      "sub" : false
+    },
+    {
+      "name": "Form Elements",
+      "link": "#formelements",
+      "sub" : false
+    },
+    {
+      "name": "UI Elements",
+      "link": "#uielements",
+      "sub" : false
+    },
+    {
+      "name": "Miscellaneous",
+      "link": "#miscellaneous",
+      "sub" : false
     }
   ]
 }
