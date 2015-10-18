@@ -48,10 +48,8 @@ var Sections = React.createClass({
     return {data: []};
   },
   componentDidMount: function() {
-    $.ajax({
-      url: this.props.url,
-      dataType: 'json',
-      cache: false
+    $.getJSON( this.props.url, function() {
+      console.log( "success" );
     })
     .done(function(data) {
       this.setState({data: data.sections});
