@@ -1,0 +1,33 @@
+{
+  "name": "Styleguide",
+  "description": "Description of project",
+  "version": "1.0.0",
+  "mainmenu": [
+    {
+      "name": "Overview",
+      "links" : [
+        {
+          "name": "Introduction",
+          "link": "#introduction"
+        },
+        {
+          "name": "Code Guidelines",
+          "link": "#code-guidelines"
+        }
+      ]
+    },
+    {
+      "name": "Design",
+      "links" : [
+        {
+          "name": "Color Scheme",
+          "link": "#color-scheme"
+        },
+        {
+          "name": "Typography",
+          "link": "#typography"
+        }
+      ]
+    }
+  ]
+}

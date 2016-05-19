@@ -1,9 +1,9 @@
 var MainMenu = React.createClass({
   render: function() {
-    var mainMenuNodes = this.props.data.map(function (section, i) {
+    var mainMenuNodes = this.props.menu.map(function (item, i) {
       return (
         <li className="styleguide-mainmenu-item" key={i}>
-          <a className="styleguide-mainmenu-link" href={section.link}>{section.name}</a>
+          <a className="styleguide-mainmenu-link" href={item.link}>{item.name}</a>
         </li>
       );
     });
@@ -26,7 +26,7 @@ var Sections = React.createClass({
       console.log( "success" );
     })
     .done(function(data) {
-      this.setState({data: data.sections});
+      this.setState({menu: data.mainmenu});
     }.bind(this))
     .fail(function(xhr, status, err) {
       console.error(this.props.url, status, err.toString());
@@ -40,6 +40,6 @@ var Sections = React.createClass({
 });
 
 ReactDOM.render(
-  <Sections url="config.json" />,
+  <Sections url="modules/config.json" />,
   document.getElementById('styleguide-sidebar')
 );
