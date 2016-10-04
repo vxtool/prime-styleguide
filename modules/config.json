@@ -5,27 +5,27 @@
   "mainmenu": [
     {
       "name": "Overview",
-      "links" : [
+      "submenu" : [
         {
           "name": "Introduction",
-          "link": "#introduction"
+          "url": "#introduction"
         },
         {
           "name": "Code Guidelines",
-          "link": "#code-guidelines"
+          "url": "#code-guidelines"
         }
       ]
     },
     {
       "name": "Design",
-      "links" : [
+      "submenu" : [
         {
           "name": "Color Scheme",
-          "link": "#color-scheme"
+          "url": "#color-scheme"
         },
         {
           "name": "Typography",
-          "link": "#typography"
+          "url": "#typography"
         }
       ]
     }
