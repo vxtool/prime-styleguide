@@ -39,7 +39,7 @@ var NavBarItem = React.createClass({
 var NavBarLink = React.createClass({
   render: function() {
     return (
-      <a className="styleguide-mainmenu-link" href={this.props.link}>{this.props.name}</a>
+      <a className="styleguide-mainmenu-link" href={this.props.url}>{this.props.name}</a>
     );
   }
 });

@@ -1,7 +1,7 @@
 var http 	= require('http');
 var path 	= require('path');
 var fs 		= require('fs');
- 
+
 extensions = {
 	".html" : "text/html",
 	".css" 	: "text/css",
@@ -11,7 +11,7 @@ extensions = {
 	".gif" 	: "image/gif",
 	".jpg" 	: "image/jpeg"
 };
- 
+
 function getFile(filePath, res, page404, mimeType){
 	fs.exists(filePath,function(exists){
 		if(exists){
@@ -47,18 +47,21 @@ function requestHandler(req, res) {
 		'browser.min.js',
 		'jquery.min.js'
 	]
- 
+
 	if(!extensions[ext]){
 		res.writeHead(404, {'Content-Type': 'text/html'});
 		res.end("&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;The requested file type is not supported&lt;/body&gt;&lt;/html&gt;");
 	};
 
 	switch(extensions[ext]) {
+    case 'application/json':
+      localFolder = localFolder + 'modules/';
+      break;
 		case 'text/css':
 			localFolder = localFolder + 'assets/css/';
 			break;
 		case 'application/javascript':
-			if(libs.indexOf(fileName) !== -1){ localFolder = localFolder + 'assets/js/lib/'; } 
+			if(libs.indexOf(fileName) !== -1){ localFolder = localFolder + 'assets/js/lib/'; }
 			else { localFolder = localFolder + 'assets/js/app/'; }
 			break;
 	}
