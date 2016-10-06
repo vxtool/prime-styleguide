@@ -2,7 +2,7 @@
   "name": "prime-styleguide",
   "version": "0.1.0",
   "description": "Prime structure for a styleguide",
-  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://descco.com.br)",
   "homepage": "https://github.com/prime-solutions/prime-styleguide#readme",
   "main": "server.js",
   "repository": {
@@ -17,7 +17,7 @@
     "styguide"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "start": "node server.js"
   },
   "license": "MIT"
