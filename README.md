@@ -8,6 +8,16 @@
 
 * [Portuguese - Brazil](translations/pt_BR)
 
+## Install
+
+- [HarpJS](http://harpjs.com/docs/quick-start)
+
+```bash
+npm install -g harp
+harp server --port 4000
+```
+
+
 ## Contributing
 
 - Fork it!
