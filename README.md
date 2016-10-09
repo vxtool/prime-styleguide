@@ -8,15 +8,9 @@
 
 * [Portuguese - Brazil](translations/pt_BR)
 
-## Install
+## References
 
-- [HarpJS](http://harpjs.com/docs/quick-start)
-
-```bash
-npm install -g harp
-harp server --port 4000
-```
-
+- [markdown-styleguide-generator](https://github.com/emiloberg/markdown-styleguide-generator)
 
 ## Contributing
 
