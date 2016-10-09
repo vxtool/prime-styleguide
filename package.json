@@ -18,7 +18,19 @@
   ],
   "scripts": {
     "test": "",
-    "start": "node server.js"
+    "start": ""
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "cheerio": "^0.19.0",
+    "fs-extra": "^0.18.3",
+    "handlebars": "^3.0.3",
+    "highlight.js": "^8.5.0",
+    "marked": "^0.3.3",
+    "walk": "^2.3.9"
+  },
+  "bin": {
+    "prime-styleguide": "index.js"
   },
   "license": "MIT"
 }
