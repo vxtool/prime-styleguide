@@ -1,12 +1,17 @@
 # Prime Styleguide
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/prime-solutions/prime-styleguide.svg?style=flat-square)](https://github.com/prime-solutions/prime-styleguide/issues)
+[![GitHub issues](https://img.shields.io/github/issues/org-victorinox/prime-styleguide.svg)](https://github.com/org-victorinox/prime-styleguide/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/org-victorinox/prime-styleguide.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/org-victorinox/prime-styleguide.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/org-victorinox/prime-styleguide.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/org-victorinox/prime-styleguide.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/org-victorinox/prime-styleguide/total.svg)
 [![npm](https://img.shields.io/npm/dt/prime-styleguide.svg?style=flat-square)](https://www.npmjs.com/package/prime-styleguide)
 
 ## Traduções
 
-* [ORIGINAL](https://github.com/prime-solutions/prime-styleguide/)
+* [ORIGINAL](https://github.com/org-victorinox/prime-styleguide/)
 
 ## Contribuindo
 
@@ -18,7 +23,7 @@
 
 ## Log
 
-Verifique os [Releases](https://github.com/prime-solutions/prime-styleguide/releases) ver detalhado o log de alterações.
+Verifique os [Releases](https://github.com/org-victorinox/prime-styleguide/releases) ver detalhado o log de alterações.
 
 ## Licença
 
